@@ -64,7 +64,7 @@
                         },
                         success:function(resp){
                             if(resp == 1){
-                                location.replace('index.php?page=home')
+                                location.replace('a.php?page=home')
                             }else{
                                 alert("Incorrect username or password.")
                                 $('#login-frm button').removeAttr('disable')

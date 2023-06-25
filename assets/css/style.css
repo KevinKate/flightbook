@@ -44,7 +44,12 @@ h6 {
   overflow: hidden;
   background: #fff;
 }
-
+.test{
+  position:absolute;
+  z-index: 999;
+  width: 100px;
+  background-color: red;
+}
 #preloader:before {
   content: "";
   position: fixed;

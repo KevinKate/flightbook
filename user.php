@@ -59,7 +59,7 @@
 									var tr = $('<tr></tr>');
 									tr.append('<td class="text-center">'+(i++)+'</td>')
 									tr.append('<td class="text-center">'+resp[k].name+'</td>')
-									tr.append('<td>'+resp[k].username+'</td>')
+									tr.append('<td>'+resp[k].email+'</td>')
 									tr.append('<td><center><button class="btn btn-sm btn-primary edit_flight mr-2" data-id="'+resp[k].id+'"><i class="fa fa-edit"></i></button><button class="btn btn-sm btn-danger remove_flight" data-id="'+resp[k].id+'"><i class="fa fa-trash"></i></button></center></td>')
 									$('#user-field tbody').append(tr)
 

@@ -131,8 +131,8 @@ INSERT INTO `schedule_list` (`id`, `flight_id`, `from_location`, `to_location`, 
 CREATE TABLE `users` (
   `id` int(30) NOT NULL,
   `name` varchar(150) NOT NULL,
-  `user_type` tinyint(1) NOT NULL DEFAULT 1 COMMENT '1 = admin, 2= First_class , 3 = economy',
-  `username` varchar(25) NOT NULL,
+  `user_type` tinyint(1) NOT NULL DEFAULT 1 COMMENT '1 = admin, 2= user',
+  `email` varchar(25) NOT NULL,
   `password` varchar(25) NOT NULL,
   `status` tinyint(1) NOT NULL DEFAULT 1 COMMENT ' 0 = incative , 1 = active',
   `date_updated` datetime NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
@@ -142,9 +142,9 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `user_type`, `username`, `password`, `status`, `date_updated`) VALUES
-(1, 'Administrator', 1, 'admin', 'admin123', 1, '2020-09-08 16:42:28'),
-(2, 'Afsha', 1, 'jsmth', 'admin123', 1, '2020-09-08 16:13:53');
+INSERT INTO `users` (`id`, `name`, `user_type`, `email`, `password`, `status`, `date_updated`) VALUES
+(1, 'Administrator', 1, 'admin123@gmailcom', 'admin123', 1, '2020-09-08 16:42:28'),
+(2, 'Afsha', 2, 'afashaa123@gmail.com', 'user123', 1, '2020-09-08 16:13:53');
 
 --
 -- Indexes for dumped tables

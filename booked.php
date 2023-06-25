@@ -85,6 +85,7 @@
 				$('#booked-field').dataTable()
 				$('.edit_booked').click(function(){
 					uni_modal('Edit Booked','customer_book.php?id='+$(this).attr('data-id')+'&bid='+$(this).attr('data-bid'),1)
+					
 				})
 			}
 		})

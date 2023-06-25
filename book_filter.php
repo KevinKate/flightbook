@@ -45,7 +45,7 @@ $location = $conn->query("SELECT id,Concat(terminal_name,', ',city,', ',state) a
 		$('input,select').each(function(){
 				get += '&'+$(this).attr('name')+'='+$(this).val();
 		})
-		location.replace("index.php?page=scheduled_list"+get)
+		location.replace("a.php?page=scheduled_list"+get)
 		
 	})
 	$('.datetimepicker').datepicker({

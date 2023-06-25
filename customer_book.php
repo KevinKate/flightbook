@@ -40,9 +40,9 @@ if(isset($_SESSION['login_id']) && isset($_GET['bid'])){
 			</div>
 			<div class="form-group mb-2">
   				<label for="" class="control-label">Class</label>
- 			    <select class="form-control" id="qty" name="qty">
-   					 <option value="Economy" <?php echo (isset($bmeta['qty']) && $bmeta['qty'] === 'Economy') ? 'selected' : '' ?>>Economy</option>
-   					 <option value="Business" <?php echo (isset($bmeta['qty']) && $bmeta['qty'] === 'Business') ? 'selected' : '' ?>>Business</option>
+ 			    <select class="form-control" >
+   					 <option >Economy</option>
+   					 <option >Business</option>
  				 </select>
 			</div>
 
